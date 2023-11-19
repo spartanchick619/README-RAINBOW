@@ -1,8 +1,28 @@
 # README-RAINBOW
 
+## About
+
+This application allows users to quickly and easily create a README file.
+
 ## Description
 
-## How to Use
+This application allows users to use a command-line application to swiftly generate a high quality, professional README so that they can devote more time to wotking on their projects on GitHub. This project was built to utilize newly acquired skills in coding and to help anyone maximize their productivity by saving time. This application uses Node.JS and inquirer. I learned how to better write a README for future projects. 
+
+## Table of Contents
+-[Installation] (#installation)
+-[Usage] (#usage)
+-[Contributors] (#contributors)
+-[License] (#license)
+
+## Installation
+
+## Usage
+
+From a terminal window, run command node index.js
+
+## Contributors
+
+Rosa Valdez
 
 ## User Story
 
@@ -28,6 +48,8 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
-##
+## License
+
+MIT 
 
 ## Links
