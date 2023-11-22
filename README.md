@@ -15,6 +15,7 @@ This application allows users to use a command-line application to swiftly gener
 -[License] (#license)
 
 ## Installation
+npm i
 
 ## Usage
 
@@ -23,6 +24,10 @@ From a terminal window, run command node index.js
 ## Contributors
 
 Rosa Valdez
+
+## License
+
+MIT 
 
 ## User Story
 
@@ -48,8 +53,6 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
-## License
 
-MIT 
 
 ## Links
