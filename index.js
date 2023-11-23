@@ -5,76 +5,50 @@ const generateMarkdown = require('./utils/generateMarkdowns');
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        type: "input",
-        message: "What's the title?",
-        name: "titile"
+      type: "input",
+      message: "What's the title?",
+      name: "title"
     },
     {
-        type: "input",
-        message: "Discribe your project.",
-        name: "description"
+      type: "input",
+      message: "Describe your project.",
+      name: "description"
     },
     {
-        type: "input",
-        message: "What is #1 in your table of contents?",
-        name: "one"
+      type: "input",
+      message: "How do you install your application?",
+      name: "installation"
     },
     {
-        type: "input",
-        message: "What is #2 in your table of contents?",
-        name: "two"
+      type: "input",
+      message: "What is your app used for?",
+      name: "usage"
     },
     {
-        type: "input",
-        message: "What is #3 in your table of contents?",
-        name: "three"
+      type: "list",
+      message: "Which license will you use?",
+      choices: ["MIT", "ISC", "IBM"],
+      name: "license"
     },
     {
-        type: "input",
-        message: "What is #4 in your table of contents?",
-        name: "four"
-    },
-
-    {
-        type: "input",
-        message: "What is #5 in your table of contents?",
-        name: "five"
+      type: "input",
+      message: "How does another person contribute to your project?",
+      name: "contribute"
     },
     {
-        type: "input",
-        message: "How do you install your application?",
-        name: "install"
+      type: "input",
+      message: "Describe tests run on your project.",
+      name: "tests"
     },
     {
-        type: "input",
-        message: "What is your app used for?",
-        name: "use"
+      type: "input",
+      message: "What is your GitHub Username?",
+      name: "repo"
     },
     {
-        type: "list",
-        message: "Which license will you use?",
-        choices: ["MIT", "ISC", "IBM"],
-        name: "license"
-    },
-    {
-        type: "input",
-        message: "How does another person contribute to your project?",
-        name: "contribute"
-    },
-    {
-        type: "input",
-        message: "Describe tests run on your project.",
-        name: "tests"
-    },
-    {
-        type: "input",
-        message: "What is your GitHub Username?",
-        name: "username"
-    },
-    {
-    type: "input",
-    message: "What is your email?",
-    name: "email"
+      type: "input",
+      message: "What is your email?",
+      name: "email"
     },
 ];
 
@@ -88,7 +62,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((responses) => {
       console.log(responses);
-      writeToFile("./dist/README.md", generateMarkdown(responses));
+      writeToFile("./README.md", generateMarkdown(responses));
     });
 }
 // Function call to initialize app
