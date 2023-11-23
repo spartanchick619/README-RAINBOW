@@ -73,4 +73,4 @@ THEN I am taken to the corresponding section of the README
 GitHub: https://github.com/spartanchick619/README-RAINBOW
 
 ## Tutorial
-youtube: C
+youtube: https://youtu.be/N9QWsYa2VV4
